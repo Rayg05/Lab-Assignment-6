@@ -4,10 +4,7 @@ int search(int numbers[], int low, int high, int value)
 {
     if(low>high){
 	    return -1;}
-    int midpoint = (low+high)/2;
-    if(low == high){
-        return midpoint;
-    }
+    int midpoint = low + ((high-low)/2);
     if(value == numbers[midpoint]){
         return midpoint;
     }
